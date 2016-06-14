@@ -71,6 +71,9 @@ class PNMessageListViewController: UIViewController, UITableViewDataSource, UITa
     
     @IBAction func sendAction(sender: AnyObject)
     {
+        if (self.inputTextView.text.isEmpty) {
+            return
+        }
         let const: Const = Const()
         let send: SendModel = SendModel.init(nick: self.userName, room: self.roomName, uuid: self.uuid)
         mqttClient.publishString(send.sendString(self.inputTextView.text), topic: const.MQTT_USER + "/" + roomName , qos: 0, retain: false)
