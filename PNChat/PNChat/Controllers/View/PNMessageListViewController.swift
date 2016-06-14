@@ -119,14 +119,14 @@ class PNMessageListViewController: UIViewController, UITableViewDataSource, UITa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let resMsg = items[indexPath.row]
-        if resMsg.nickName == self.nibName {
-            let cell: PNMeMessageTableViewCell = tableView.dequeueReusableCellWithIdentifier("PNMeMessageTableViewCell", forIndexPath: indexPath) as! PNMeMessageTableViewCell
+        if resMsg.nickName == self.userName {
+            let cell: PNMeMessageTableViewCell = tableView.dequeueReusableCellWithIdentifier("PNMeMessageTableViewCell") as! PNMeMessageTableViewCell
             cell.nameLabel.text = resMsg.nickName
             cell.messageLabel.text = resMsg.message
             return cell
             
         } else {
-            let cell: PNOtherMessageTableViewCell = tableView.dequeueReusableCellWithIdentifier("PNOtherMessageTableViewCell", forIndexPath: indexPath) as! PNOtherMessageTableViewCell
+            let cell: PNOtherMessageTableViewCell = tableView.dequeueReusableCellWithIdentifier("PNOtherMessageTableViewCell") as! PNOtherMessageTableViewCell
             cell.nameLabel.text = resMsg.nickName
             cell.messageLabel.text = resMsg.message
             return cell
