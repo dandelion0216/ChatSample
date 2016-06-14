@@ -17,6 +17,8 @@ class PNHomeViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tfNickName.text = "test"
+        self.tfRoomName.text = "roomTestt"
     }
 
     override func didReceiveMemoryWarning() {

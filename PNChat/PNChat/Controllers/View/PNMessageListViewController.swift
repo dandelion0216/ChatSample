@@ -10,7 +10,7 @@ import UIKit
 import SpriteKit
 import Moscapsule
 
-class PNMessageListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PNMessageListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextViewDelegate {
     
     @IBOutlet var messageTableView: UITableView!
     @IBOutlet var inputArea: UIView!
@@ -24,9 +24,21 @@ class PNMessageListViewController: UIViewController, UITableViewDataSource, UITa
     
     let uuid = NSUUID().UUIDString
     
+    var items: [ResponseMessage] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = roomName
+        
+        // notificationCenter
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self, selector: #selector(PNMessageListViewController.handleKeyboardWillShowNotification(_:)),
+                                       name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(PNMessageListViewController.handleKeyboardWillHideNotification(_:)),
+                                       name: UIKeyboardWillHideNotification, object: nil)
+        
+        self.messageTableView.registerNib(UINib.init(nibName: "PNMeMessageTableViewCell", bundle: nil), forCellReuseIdentifier: "PNMeMessageTableViewCell")
+        self.messageTableView.registerNib(UINib.init(nibName: "PNOtherMessageTableViewCell", bundle: nil), forCellReuseIdentifier: "PNOtherMessageTableViewCell")
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -41,8 +53,11 @@ class PNMessageListViewController: UIViewController, UITableViewDataSource, UITa
         mqttConf.cleanSession = true
         mqttConf.onMessageCallback = { mqttMessage in
             // TODO:
+            let str: String = mqttMessage.payloadString!
+            let responseMessage = ResponseMessage()
+            responseMessage.parseMessage(str, id: mqttMessage.messageId)
             dispatch_async(dispatch_get_main_queue(), {
-                self.reloadMessages(mqttMessage)
+                self.reloadMessages(responseMessage)
             })
         }
         
@@ -57,7 +72,8 @@ class PNMessageListViewController: UIViewController, UITableViewDataSource, UITa
     @IBAction func sendAction(sender: AnyObject)
     {
         let const: Const = Const()
-        mqttClient.publishString("test", topic: const.MQTT_USER + "/" + roomName , qos: 0, retain: false)
+        let send: SendModel = SendModel.init(nick: self.userName, room: self.roomName, uuid: self.uuid)
+        mqttClient.publishString(send.sendString(self.inputTextView.text), topic: const.MQTT_USER + "/" + roomName , qos: 0, retain: false)
     }
     
     /**
@@ -72,19 +88,48 @@ class PNMessageListViewController: UIViewController, UITableViewDataSource, UITa
         self.roomName = roomName
     }
     
-    func reloadMessages(messages: MQTTMessage) {
-        let test = messages.payloadString
-        NSLog("message : %@", test! as NSString)
+    func reloadMessages(parsedMessage: ResponseMessage)
+    {
+        self.items.append(parsedMessage)
+        self.messageTableView.reloadData()
+        self.inputTextView.resignFirstResponder()
+        self.view.transform = CGAffineTransformIdentity
+    }
+    
+    // handleKeyboardWillShowNotification
+    func handleKeyboardWillShowNotification(notification: NSNotification) {
         
+        let userInfo               = notification.userInfo!
+        let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        
+        let transform  = CGAffineTransformMakeTranslation(0, -keyboardScreenEndFrame.size.height);
+        self.view.transform = transform
+    }
+    
+    // handleKeyboardWillShowNotification
+    func handleKeyboardWillHideNotification(notification: NSNotification) {
+        self.view.transform = CGAffineTransformIdentity
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 0
+        return self.items.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        return UITableViewCell.init()
+        let resMsg = items[indexPath.row]
+        if resMsg.nickName == self.nibName {
+            let cell: PNMeMessageTableViewCell = tableView.dequeueReusableCellWithIdentifier("PNMeMessageTableViewCell", forIndexPath: indexPath) as! PNMeMessageTableViewCell
+            cell.nameLabel.text = resMsg.nickName
+            cell.messageLabel.text = resMsg.message
+            return cell
+            
+        } else {
+            let cell: PNOtherMessageTableViewCell = tableView.dequeueReusableCellWithIdentifier("PNOtherMessageTableViewCell", forIndexPath: indexPath) as! PNOtherMessageTableViewCell
+            cell.nameLabel.text = resMsg.nickName
+            cell.messageLabel.text = resMsg.message
+            return cell
+        }
     }
 }

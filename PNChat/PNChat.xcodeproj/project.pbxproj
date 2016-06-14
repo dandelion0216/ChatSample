@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492BF2C61D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BF2C41D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift */; };
+		492BF2C71D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BF2C41D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift */; };
+		492BF2C81D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BF2C41D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift */; };
+		492BF2C91D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492BF2C51D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib */; };
+		492BF2CA1D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492BF2C51D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib */; };
+		492BF2CB1D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 492BF2C51D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib */; };
+		492BF2D91D0FF493005FE70B /* SendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BF2D81D0FF493005FE70B /* SendModel.swift */; };
+		492BF2DA1D0FF493005FE70B /* SendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BF2D81D0FF493005FE70B /* SendModel.swift */; };
+		492BF2DB1D0FF493005FE70B /* SendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BF2D81D0FF493005FE70B /* SendModel.swift */; };
+		492BF2DD1D0FF983005FE70B /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BF2DC1D0FF983005FE70B /* ResponseMessage.swift */; };
+		492BF2DE1D0FF983005FE70B /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BF2DC1D0FF983005FE70B /* ResponseMessage.swift */; };
+		492BF2DF1D0FF983005FE70B /* ResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BF2DC1D0FF983005FE70B /* ResponseMessage.swift */; };
 		8B52B64E1D0F9165000AA7AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52B64D1D0F9165000AA7AA /* AppDelegate.swift */; };
 		8B52B6631D0F9165000AA7AA /* PNChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52B6621D0F9165000AA7AA /* PNChatTests.swift */; };
 		8B52B66E1D0F9165000AA7AA /* PNChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52B66D1D0F9165000AA7AA /* PNChatUITests.swift */; };
@@ -37,7 +49,7 @@
 		8B5F578E1D0FAA7C00FEFC84 /* PNMessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F578D1D0FAA7C00FEFC84 /* PNMessageListViewController.swift */; };
 		8B5F578F1D0FAA7C00FEFC84 /* PNMessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F578D1D0FAA7C00FEFC84 /* PNMessageListViewController.swift */; };
 		8B5F57901D0FAA7C00FEFC84 /* PNMessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F578D1D0FAA7C00FEFC84 /* PNMessageListViewController.swift */; };
-		92CACCCDADC93A572B8F29BE /* Pods_PNChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711B712AA6D18CC0938EC65F /* Pods_PNChat.framework */; };
+		EC5E7B3F694701ED2C99839D /* Pods_PNChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C6DC03DAA3BB0191CEC7DC /* Pods_PNChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +70,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6424E4D008D2D8C7BE6D412B /* Pods-PNChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNChat/Pods-PNChat.release.xcconfig"; sourceTree = "<group>"; };
-		711B712AA6D18CC0938EC65F /* Pods_PNChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F8A4835EB72A76614F1C001 /* Pods-PNChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNChat/Pods-PNChat.debug.xcconfig"; sourceTree = "<group>"; };
+		38C6DC03DAA3BB0191CEC7DC /* Pods_PNChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		492BF2C41D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNOtherMessageTableViewCell.swift; sourceTree = "<group>"; };
+		492BF2C51D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PNOtherMessageTableViewCell.xib; sourceTree = "<group>"; };
+		492BF2D81D0FF493005FE70B /* SendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendModel.swift; sourceTree = "<group>"; };
+		492BF2DC1D0FF983005FE70B /* ResponseMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMessage.swift; sourceTree = "<group>"; };
 		8B52B64A1D0F9165000AA7AA /* PNChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PNChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B52B64D1D0F9165000AA7AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B52B65E1D0F9165000AA7AA /* PNChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PNChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +92,8 @@
 		8B5F57851D0FA94800FEFC84 /* PNMeMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNMeMessageTableViewCell.swift; sourceTree = "<group>"; };
 		8B5F57861D0FA94800FEFC84 /* PNMeMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PNMeMessageTableViewCell.xib; sourceTree = "<group>"; };
 		8B5F578D1D0FAA7C00FEFC84 /* PNMessageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNMessageListViewController.swift; sourceTree = "<group>"; };
+		9A1CFD4FDF38002AC31F5517 /* Pods-PNChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNChat/Pods-PNChat.release.xcconfig"; sourceTree = "<group>"; };
+		F0210222202E6E3403BAA242 /* Pods-PNChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNChat/Pods-PNChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92CACCCDADC93A572B8F29BE /* Pods_PNChat.framework in Frameworks */,
+				EC5E7B3F694701ED2C99839D /* Pods_PNChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,19 +122,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5456734F92FFB9CDDFC03777 /* Frameworks */ = {
+		02603BCF0707D76D3AEB31F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				711B712AA6D18CC0938EC65F /* Pods_PNChat.framework */,
+				38C6DC03DAA3BB0191CEC7DC /* Pods_PNChat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5B26FE43D1B03FABA41841B7 /* Pods */ = {
+		65DB0642E610447B56CCAADF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7F8A4835EB72A76614F1C001 /* Pods-PNChat.debug.xcconfig */,
-				6424E4D008D2D8C7BE6D412B /* Pods-PNChat.release.xcconfig */,
+				F0210222202E6E3403BAA242 /* Pods-PNChat.debug.xcconfig */,
+				9A1CFD4FDF38002AC31F5517 /* Pods-PNChat.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -130,8 +146,8 @@
 				8B52B6611D0F9165000AA7AA /* PNChatTests */,
 				8B52B66C1D0F9165000AA7AA /* PNChatUITests */,
 				8B52B64B1D0F9165000AA7AA /* Products */,
-				5B26FE43D1B03FABA41841B7 /* Pods */,
-				5456734F92FFB9CDDFC03777 /* Frameworks */,
+				65DB0642E610447B56CCAADF /* Pods */,
+				02603BCF0707D76D3AEB31F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +211,8 @@
 		8B5F57521D0F950E00FEFC84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				492BF2D81D0FF493005FE70B /* SendModel.swift */,
+				492BF2DC1D0FF983005FE70B /* ResponseMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +241,8 @@
 			children = (
 				8B5F57851D0FA94800FEFC84 /* PNMeMessageTableViewCell.swift */,
 				8B5F57861D0FA94800FEFC84 /* PNMeMessageTableViewCell.xib */,
+				492BF2C41D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift */,
+				492BF2C51D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -243,12 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B52B6721D0F9165000AA7AA /* Build configuration list for PBXNativeTarget "PNChat" */;
 			buildPhases = (
-				90ADE6AB36154E1D4DE4CF66 /* Check Pods Manifest.lock */,
+				D9120EB641DE837D8206D36B /* [CP] Check Pods Manifest.lock */,
 				8B52B6461D0F9165000AA7AA /* Sources */,
 				8B52B6471D0F9165000AA7AA /* Frameworks */,
 				8B52B6481D0F9165000AA7AA /* Resources */,
-				ACBCC749EA2401CD981FF713 /* Embed Pods Frameworks */,
-				DAAAE342882D377C724A1CC0 /* Copy Pods Resources */,
+				D8E9A893D7F5E2FAF4A5C1E7 /* [CP] Embed Pods Frameworks */,
+				98DC5967D51E8D5472519ABA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,14 +327,13 @@
 				TargetAttributes = {
 					8B52B6491D0F9165000AA7AA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5A3K6U233J;
 					};
 					8B52B65D1D0F9165000AA7AA = {
 						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 8B52B6491D0F9165000AA7AA;
 					};
 					8B52B6681D0F9165000AA7AA = {
 						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 8B52B6491D0F9165000AA7AA;
 					};
 				};
 			};
@@ -343,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492BF2C91D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib in Resources */,
 				8B5F57641D0F954F00FEFC84 /* Info.plist in Resources */,
 				8B5F578A1D0FA94800FEFC84 /* PNMeMessageTableViewCell.xib in Resources */,
 				8B5F57611D0F954F00FEFC84 /* Main.storyboard in Resources */,
@@ -355,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492BF2CA1D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib in Resources */,
 				8B5F57651D0F954F00FEFC84 /* Info.plist in Resources */,
 				8B5F578B1D0FA94800FEFC84 /* PNMeMessageTableViewCell.xib in Resources */,
 				8B5F57621D0F954F00FEFC84 /* Main.storyboard in Resources */,
@@ -367,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492BF2CB1D0FEBED005FE70B /* PNOtherMessageTableViewCell.xib in Resources */,
 				8B5F57661D0F954F00FEFC84 /* Info.plist in Resources */,
 				8B5F578C1D0FA94800FEFC84 /* PNMeMessageTableViewCell.xib in Resources */,
 				8B5F57631D0F954F00FEFC84 /* Main.storyboard in Resources */,
@@ -378,29 +400,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		90ADE6AB36154E1D4DE4CF66 /* Check Pods Manifest.lock */ = {
+		98DC5967D51E8D5472519ABA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNChat/Pods-PNChat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ACBCC749EA2401CD981FF713 /* Embed Pods Frameworks */ = {
+		D8E9A893D7F5E2FAF4A5C1E7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,19 +430,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNChat/Pods-PNChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DAAAE342882D377C724A1CC0 /* Copy Pods Resources */ = {
+		D9120EB641DE837D8206D36B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNChat/Pods-PNChat-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -432,6 +454,9 @@
 			files = (
 				8B5F57761D0FA80A00FEFC84 /* PNHomeViewController.swift in Sources */,
 				8B5F578E1D0FAA7C00FEFC84 /* PNMessageListViewController.swift in Sources */,
+				492BF2D91D0FF493005FE70B /* SendModel.swift in Sources */,
+				492BF2C61D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift in Sources */,
+				492BF2DD1D0FF983005FE70B /* ResponseMessage.swift in Sources */,
 				8B5F57871D0FA94800FEFC84 /* PNMeMessageTableViewCell.swift in Sources */,
 				8B52B64E1D0F9165000AA7AA /* AppDelegate.swift in Sources */,
 				8B5F57681D0F95A900FEFC84 /* Const.swift in Sources */,
@@ -444,6 +469,9 @@
 			files = (
 				8B5F57771D0FA80A00FEFC84 /* PNHomeViewController.swift in Sources */,
 				8B5F578F1D0FAA7C00FEFC84 /* PNMessageListViewController.swift in Sources */,
+				492BF2DA1D0FF493005FE70B /* SendModel.swift in Sources */,
+				492BF2C71D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift in Sources */,
+				492BF2DE1D0FF983005FE70B /* ResponseMessage.swift in Sources */,
 				8B5F57881D0FA94800FEFC84 /* PNMeMessageTableViewCell.swift in Sources */,
 				8B52B6631D0F9165000AA7AA /* PNChatTests.swift in Sources */,
 				8B5F57691D0F95A900FEFC84 /* Const.swift in Sources */,
@@ -456,6 +484,9 @@
 			files = (
 				8B5F57781D0FA80A00FEFC84 /* PNHomeViewController.swift in Sources */,
 				8B5F57901D0FAA7C00FEFC84 /* PNMessageListViewController.swift in Sources */,
+				492BF2DB1D0FF493005FE70B /* SendModel.swift in Sources */,
+				492BF2C81D0FEBED005FE70B /* PNOtherMessageTableViewCell.swift in Sources */,
+				492BF2DF1D0FF983005FE70B /* ResponseMessage.swift in Sources */,
 				8B5F57891D0FA94800FEFC84 /* PNMeMessageTableViewCell.swift in Sources */,
 				8B52B66E1D0F9165000AA7AA /* PNChatUITests.swift in Sources */,
 				8B5F576A1D0F95A900FEFC84 /* Const.swift in Sources */,
@@ -582,51 +613,51 @@
 		};
 		8B52B6731D0F9165000AA7AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F8A4835EB72A76614F1C001 /* Pods-PNChat.debug.xcconfig */;
+			baseConfigurationReference = F0210222202E6E3403BAA242 /* Pods-PNChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/PNChat/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nobuharu.Itoh.PNChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		8B52B6741D0F9165000AA7AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6424E4D008D2D8C7BE6D412B /* Pods-PNChat.release.xcconfig */;
+			baseConfigurationReference = 9A1CFD4FDF38002AC31F5517 /* Pods-PNChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/PNChat/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nobuharu.Itoh.PNChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		8B52B6761D0F9165000AA7AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PNChatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nobuharu.Itoh.PNChatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PNChat.app/PNChat";
 			};
 			name = Debug;
 		};
 		8B52B6771D0F9165000AA7AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PNChatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nobuharu.Itoh.PNChatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PNChat.app/PNChat";
 			};
 			name = Release;
 		};
@@ -637,7 +668,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nobuharu.Itoh.PNChatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = PNChat;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -648,7 +679,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nobuharu.Itoh.PNChatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = PNChat;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
